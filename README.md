@@ -1,6 +1,14 @@
 # eaip
 
-This template should help get you started developing with Vue 3 in Vite.
+*[English](README.md) | [中文](README.zh-CN.md)*
+
+eAIP Viewer
+
+# Changed
+
+Added internationalization (i18n) support
+Modified the Subject of AICs and SUPs to display in Chinese
+No longer uses environment variables to set the eAIP path; now reads from the Data folder in the root directory
 
 ## Recommended IDE Setup
 
@@ -31,7 +39,6 @@ npm run build
 ### Deployment
 
 Step1: Download latest EAIP full package from [https://www.eaipchina.cn/home/Version/ < latest version number > /Master](https://www.eaipchina.cn/home/Default).   
-Step2: unzip and deploy full package to expected server.   
-Step3: edit `VITE_DATA_BASE_URL` in `.env.production` file     
-Step4: vite build this project.    
-Step5: copy files in build dist into the full package path and override content.    
+Step2: unzip and deploy Data package to public package.   
+Step3: vite build this project.    
+Step4: copy files in build dist into the full package path and override content.    

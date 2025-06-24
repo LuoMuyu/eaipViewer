@@ -56,11 +56,11 @@
 
 	const config = {
 		AMDT: {
-			url: import.meta.env.VITE_DATA_BASE_URL+'/Data/JsonPath/AMDT.JSON',
+			url: '../Data/JsonPath/AMDT.JSON',
 		},
-    AIP: {
-      url: import.meta.env.VITE_DATA_BASE_URL+'/Data/JsonPath/AIP.JSON',
-    },
+		AIP: {
+			url: '../Data/JsonPath/AIP.JSON',
+		},
 	}
 
 	const loadData = async (url, varName) => {

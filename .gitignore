@@ -16,7 +16,7 @@ coverage
 
 /cypress/videos/
 /cypress/screenshots/
-/public/EAIP*
+/public/Data
 
 # Editor directories and files
 .vscode/*

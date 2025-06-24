@@ -41,7 +41,7 @@
 
 	const config = {
 		NOTAM: {
-			url: import.meta.env.VITE_DATA_BASE_URL + '/Data/JsonPath/NOTAM.JSON',
+			url: '../Data/JsonPath/NOTAM.JSON',
 			varName: 'notamTreeData',
 			rowKey: 'SeriesName',
 			columns: [
@@ -56,7 +56,7 @@
 			]
 		},
 		AICs: {
-			url: import.meta.env.VITE_DATA_BASE_URL+'/Data/JsonPath/AIC.JSON',
+			url: '../Data/JsonPath/AIC.JSON',
 			varName: 'aicTreeData',
 			rowKey: 'Id',
 			columns: [
@@ -76,7 +76,7 @@
 			]
 		},
 		SUPs: {
-			url: import.meta.env.VITE_DATA_BASE_URL+'/Data/JsonPath/SUP.JSON',
+			url: '../Data/JsonPath/SUP.JSON',
 			varName: 'supTreeData',
 			rowKey: 'Id',
 			columns: [

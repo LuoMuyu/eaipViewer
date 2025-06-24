@@ -22,11 +22,11 @@
 		console.log(newValue)
 		if (newValue) {
 			if (contentStore.currentType === 'pdf') {
-				pdfSource.value = import.meta.env.VITE_DATA_BASE_URL + newValue
+				pdfSource.value = '../' + newValue
 				pdfLoading.value = true;
 			} else if (contentStore.currentType === 'html') {
 				iframeLoading.value = true;
-				iframeURL.value = import.meta.env.VITE_DATA_BASE_URL + newValue;
+				iframeURL.value = '../' + newValue;
 			}
 		}
 	})
