@@ -7,7 +7,9 @@ eAIP Viewer
 # Changed
 
 Added internationalization (i18n) support
+
 Modified the Subject of AICs and SUPs to display in Chinese
+
 No longer uses environment variables to set the eAIP path; now reads from the Data folder in the root directory
 
 ## Recommended IDE Setup
