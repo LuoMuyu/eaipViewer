@@ -2,6 +2,9 @@
 	import {ref, watch} from "vue"
 	import { useRoute, useRouter } from "vue-router";
 	import { useContentStore } from "@/store/index.js";
+	import { useI18n } from 'vue-i18n';
+
+	const { t } = useI18n()
 
 	const route = useRoute()
 
@@ -44,11 +47,11 @@
 			columns: [
 				{
 					colKey: 'SeriesName',
-					title: '名称',
+					title: t('NOTAM.title.name'),
 				},
 				{
 					colKey: 'GenerateTime',
-					title: '生成时间'
+					title: t('NOTAM.title.generateTime')
 				}
 			]
 		},
@@ -59,16 +62,16 @@
 			columns: [
 				{
 					colKey: 'Serial',
-					title: 'NR/Year',
+					title: t('AICs.title.serial'),
 					width: '56px',
 				},
 				{
 					colKey: 'Pub_Date',
-					title: 'Published on'
+					title: t('AICs.title.pubDate')
 				},
 				{
-					colKey: 'Subject',
-					title: 'Subject'
+					colKey: t('AICs.title.local_subject'),
+					title: t('AICs.title.subject')
 				}
 			]
 		},
@@ -79,16 +82,16 @@
 			columns: [
 				{
 					colKey: 'Serial',
-					title: 'NR/Year',
+					title: t('SUPs.title.serial'),
 					width: '56px',
 				},
 				{
-					colKey: 'Subject',
-					title: 'Subject'
+					colKey: t('SUPs.title.local_subject'),
+					title: t('SUPs.title.subject')
 				},
 				{
 					colKey: 'period',
-					title: 'Period of validity'
+					title: t('SUPs.title.period')
 				},
 			]
 		}

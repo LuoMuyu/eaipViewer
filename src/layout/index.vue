@@ -6,6 +6,9 @@ import { computed } from "vue"
 import MainFrame from "@/components/MainFrame.vue";
 import { useRoute, useRouter } from "vue-router";
 import Aside from "@/components/Aside.vue";
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n()
 
 const settingsStore = useSettingsStore()
 
@@ -19,6 +22,11 @@ const themeChange = (e) => {
 
 const languageChange = (e) => {
 	console.log("languageChange", e);
+  if (e === "en") {
+    locale.value = "en"
+  }else {
+    locale.value = "zh"
+  }
 	settingsStore.setLanguage(e)
 }
 
@@ -50,24 +58,24 @@ const jumpToGithub = () => {
           <img
             width="136"
             class="logo"
-            :src="'../img/logo-copy.6608b40d.png'"
+            :src="'../logo.png'"
             alt="logo"
           >
         </template>
         <t-menu-item value="AIP">
-          AIP
+          {{ $t('AIP.name') }}
         </t-menu-item>
         <t-menu-item value="AMDT">
-          AMDT
+          {{ $t('AMDT.name') }}
         </t-menu-item>
         <t-menu-item value="SUPs">
-          SUPs
+          {{ $t('SUPs.name') }}
         </t-menu-item>
         <t-menu-item value="AICs">
-          AICs
+          {{ $t('AICs.name') }}
         </t-menu-item>
         <t-menu-item value="NOTAM">
-          NOTAM
+          {{ $t('NOTAM.name') }}
         </t-menu-item>
         <template
           #operations

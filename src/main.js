@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { createPinia } from 'pinia'
 import {router} from '@/router/index.js'
+import i18n from './locales'
 
 // 引入组件库的少量全局样式变量
 import 'tdesign-vue-next/es/style/index.css';
@@ -18,6 +19,7 @@ const pinia = createPinia()
 const app = createApp(App);
 app.use(pinia);
 app.use(router);
+app.use(i18n);
 app.mount('#app')
 
 document.documentElement.setAttribute('theme-mode', 'dark');

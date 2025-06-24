@@ -1,0 +1,34 @@
+{
+  "loading": "加载中...",
+  "AIP": {
+    "name": "航行资料汇编"
+  },
+  "AMDT": {
+    "name": "修订通告"
+  },
+  "SUPs": {
+    "name": "临时通告",
+    "title": {
+        "serial": "编号/年",
+        "subject": "主题",
+        "period": "有效期",
+        "local_subject": "Local_Subject"
+    }
+  },
+  "AICs": {
+    "name": "航空信息通告",
+    "title": {
+        "serial": "编号/年",
+        "pubDate": "发布日期",
+        "subject": "主题",
+        "local_subject": "Local_Subject"
+    }
+  },
+  "NOTAM": {
+    "name": "航行通告",
+    "title":{
+        "name": "名称",
+        "generateTime": "生成时间"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "loading": "loading...",
+  "AIP": {
+    "name":"AIP" 
+  },
+  "AMDT": {
+    "name": "AMDT"
+  },
+  "SUPs": {
+    "name": "SUPs",
+    "title": {
+        "serial": "NR/Year",
+        "subject": "Subject",
+        "period": "Period of validity",
+        "local_subject": "Subject"
+    }
+  },
+  "AICs": {
+    "name": "AICs",
+    "title": {
+        "serial": "NR/Year",
+        "pubDate": "Published on",
+        "subject": "Subject",
+        "local_subject": "Subject"
+    }
+  },
+  "NOTAM": {
+    "name": "NOTAM",
+    "title":{
+        "name": "Name",
+        "generateTime": "Generated Time"
+    }
+  }
+}
